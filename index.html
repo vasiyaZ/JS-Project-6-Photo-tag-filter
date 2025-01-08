@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album with Tagging and Filtering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Album</h1>
+        <div class="upload-section">
+            <input type="file" id="photoUpload" multiple accept="image/*">
+            <button id="uploadBtn">Upload Photos</button>
+        </div>
+        <div class="tag-section">
+            <input type="text" id="tagInput" placeholder="Add tags (comma-separated)">
+            <button id="addTagsBtn">Add Tags</button>
+        </div>
+        <div class="filter-section">
+            <input type="text" id="filterInput" placeholder="Filter by tag">
+        </div>
+        <div id="photoAlbum" class="photo-album"></div>
+    </div>
+    <!-- save and load button -->
+    <div class="save-load-section">
+        <button id="saveBtn">Save Photos</button>
+        <button id="loadBtn">Load Photos</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
