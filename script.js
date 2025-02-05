@@ -40,6 +40,8 @@ const renderAlbum = (filterTag = "") => {
 const handleFileUpload = (file) => {
     return new Promise((resolve, reject) => {
         const reader = new FileReader();
+        console.log('reader',reader);
+               
         reader.onload = () => resolve({ src: reader.result, tags: [] });
         reader.onerror = () => reject("Failed to load file");
         reader.readAsDataURL(file);
